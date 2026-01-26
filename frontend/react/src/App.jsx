@@ -1,12 +1,9 @@
 import './App.css'
+import AppRoutes from "./routes/AppRoutes"
 
 function App() {
 
-  return (
-    <>
-      <h1> Welcome Frontend React </h1>
-    </>
-  )
+  return <AppRoutes />
 }
 
 export default App
