@@ -1,19 +1,10 @@
-export default function AuthForm({
-  title,
-  children,
-  buttonText
-}) {
+export default function AuthForm({ title, children }) {
   return (
     <div style={styles.container}>
-      <form style={styles.form}>
+      <div style={styles.form}>
         <h2>{title}</h2>
-
         {children}
-
-        <button type="submit" style={styles.button}>
-          {buttonText}
-        </button>
-      </form>
+      </div>
     </div>
   )
 }
@@ -34,13 +25,5 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     gap: "12px"
-  },
-  button: {
-    padding: "10px",
-    background: "#2563eb",
-    color: "#fff",
-    border: "none",
-    borderRadius: "4px",
-    cursor: "pointer"
   }
 }
