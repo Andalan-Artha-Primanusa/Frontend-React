@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nexora Technology | PT Nexora Teknologi Nusantara</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed": "#d5e3ff",
+                    "on-primary": "#ffffff",
+                    "primary-container": "#0059a7",
+                    "on-secondary-fixed": "#001c39",
+                    "on-tertiary-container": "#ffc4a4",
+                    "inverse-surface": "#2f3131",
+                    "tertiary-container": "#934100",
+                    "on-tertiary-fixed-variant": "#763300",
+                    "surface-bright": "#f9f9f9",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "outline-variant": "#c2c6d3",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "surface-container-low": "#f3f3f4",
+                    "on-primary-fixed": "#001c3b",
+                    "text-muted": "#979797",
+                    "tertiary-fixed": "#ffdbc9",
+                    "on-secondary-container": "#335682",
+                    "on-primary-container": "#b6d1ff",
+                    "secondary-fixed-dim": "#a6c9fb",
+                    "surface-container-high": "#e8e8e8",
+                    "inverse-on-surface": "#f0f1f1",
+                    "tertiary": "#6e2f00",
+                    "surface-variant": "#e2e2e2",
+                    "surface-dark": "#002F59",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-tint": "#115fad",
+                    "background": "#f9f9f9",
+                    "on-background": "#1a1c1c",
+                    "divider-light": "#E5E9F0",
+                    "primary-fixed-dim": "#a6c8ff",
+                    "on-primary-fixed-variant": "#004787",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-fixed-dim": "#ffb68e",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#424751",
+                    "on-secondary-fixed-variant": "#234873",
+                    "secondary-container": "#a9cbfe",
+                    "secondary-fixed": "#d3e3ff",
+                    "secondary": "#3d608c",
+                    "error": "#ba1a1a",
+                    "accent-blue-vibrant": "#1A6AFF",
+                    "inverse-primary": "#a6c8ff",
+                    "on-tertiary-fixed": "#331200",
+                    "outline": "#727782",
+                    "surface-dim": "#dadada",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#00427e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "unit": "8px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "section-padding": "120px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Poppins"],
+                    "display-lg-mobile": ["Poppins"],
+                    "body-md": ["Poppins"],
+                    "button-label": ["Poppins"],
+                    "subheading": ["Poppins"],
+                    "headline-sm": ["Poppins"],
+                    "display-lg": ["Poppins"],
+                    "label-sm": ["Poppins"],
+                    "menu-item": ["Poppins"],
+                    "body-lg": ["Poppins"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "button-label": ["16px", {"lineHeight": "1.0", "fontWeight": "600"}],
+                    "subheading": ["20px", {"lineHeight": "1.5", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "500"}],
+                    "menu-item": ["15px", {"lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Poppins', sans-serif; background-color: #f9f9f9; color: #1a1c1c; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .grid-pattern { background-image: radial-gradient(#0059A7 0.5px, transparent 0.5px); background-size: 24px 24px; opacity: 0.05; }
+        .section-accent { position: relative; }
+        .section-accent::before { content: ''; position: absolute; left: 0; top: 0; width: 4px; height: 100%; background: #0059A7; }
+        .hero-gradient { background: radial-gradient(circle at 70% 30%, rgba(0, 89, 167, 0.08) 0%, transparent 50%); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-surface/85 backdrop-blur-md shadow-sm fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+                Nexora<span class="text-on-secondary-fixed">Technology</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-menu-item text-menu-item text-on-surface hover:text-primary transition-all duration-200 font-semibold" href="#about">About</a>
+<a class="font-menu-item text-menu-item text-on-surface hover:text-primary transition-all duration-200 font-semibold" href="#services">Services</a>
+<a class="font-menu-item text-menu-item text-on-surface hover:text-primary transition-all duration-200 font-semibold" href="#leadership">Leadership</a>
+<a class="font-menu-item text-menu-item text-on-surface hover:text-primary transition-all duration-200 font-semibold" href="#portfolio">Portfolio</a>
+<a class="font-menu-item text-menu-item text-on-surface hover:text-primary transition-all duration-200 font-semibold" href="#contact">Contact</a>
+</nav>
+<a class="hidden md:flex bg-primary text-on-primary px-6 py-3 rounded-lg font-button-label text-button-label hover:shadow-lg hover:scale-105 active:opacity-80 transition-all duration-200" href="#contact">
+                Get Consultation
+            </a>
+<button class="md:hidden text-primary" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-white">
+<div class="absolute inset-0 grid-pattern"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+<!-- Animated Background Ornaments -->
+<div class="absolute top-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-pulse"></div>
+<div class="absolute bottom-1/4 left-10 w-64 h-64 bg-accent-blue-vibrant/5 rounded-full blur-2xl"></div>
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center space-x-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 bg-primary rounded-full animate-ping"></span>
+<span>PT Nexora Teknologi Nusantara</span>
+</div>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-on-secondary-fixed max-w-2xl">
+                    COMPANY PROFILE NEXORA TECHNOLOGY
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Elevating Businesses, Empowering Innovation. Kami menghadirkan solusi teknologi mutakhir untuk mengakselerasi pertumbuhan bisnis Anda.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-lg font-button-label text-button-label text-center hover:shadow-xl hover:-translate-y-1 transition-all duration-300" href="#contact">
+                        Get Consultation
+                    </a>
+<a class="border-2 border-primary text-primary px-8 py-4 rounded-lg font-button-label text-button-label text-center hover:bg-primary/5 transition-all duration-300" href="#services">
+                        Explore Services
+                    </a>
+</div>
+</div>
+<div class="relative hidden lg:block">
+<div class="aspect-square relative rounded-2xl overflow-hidden shadow-2xl group">
+<img alt="Future Tech" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic, high-angle shot of a sophisticated command center with glowing blue holographic displays and a futuristic glass desk. The lighting is clean and professional with deep navy and vibrant cyan accents reflecting off sleek metallic surfaces. Digital circuit lines subtly float in the atmosphere, creating a sense of advanced engineering and enterprise-level technology innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBl5fYQGJgVrNFlS6gdcBMtJulAnZ4KJazbSeUDNqVoRHMOFaDldQSfSEsDyxVbvWTCXUtsK7YiS8JKCS5bJXaiYaVnHiobQVv3qSHjBcPYJkZS7Bmy5PpYSsB78Rjuh0EkjK63yW5TyYL5LLNo-5JYgYFiyy8EqVC4lSMU-rf03UHwm7DjF3YaeYiBuZ_WSAKGuULI7yIfW_Hpf_okYW2XwR8eM26pckDd-VdYmKIy82KimsH5eKp2hHS0TMiMmyg5wkwaoUy8fJva"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark/60 to-transparent"></div>
+</div>
+<!-- Floating Info Card -->
+<div class="absolute -bottom-10 -left-10 glass-card p-6 rounded-xl shadow-xl max-w-xs border border-primary/20">
+<div class="flex items-center gap-4 mb-3">
+<div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary">99.9%</h4>
+</div>
+<p class="text-on-surface-variant font-label-sm">System reliability and uptime guaranteed for enterprise integration.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-section-padding bg-surface-container-lowest" id="about">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-6">
+<h2 class="font-headline-md text-headline-md text-primary section-accent pl-6">About Nexora</h2>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                        Di era digital yang terus berkembang, teknologi bukan lagi sekadar pendukung, melainkan inti dari setiap strategi bisnis yang sukses. PT Nexora Teknologi Nusantara (Nexora Technology) hadir sebagai mitra strategis bagi perusahaan yang ingin bertransformasi, berinovasi, dan mendominasi pasar melalui solusi teknologi informasi yang cerdas, efisien, dan berorientasi pada hasil.
+                    </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6">
+<div class="p-6 bg-surface border border-divider-light rounded-xl hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">hub</span>
+<h3 class="font-subheading text-subheading text-on-secondary-fixed mb-2">One-Stop Technology Partner</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Solusi terintegrasi dari hulu ke hilir untuk segala kebutuhan IT Anda.</p>
+</div>
+<div class="p-6 bg-surface border border-divider-light rounded-xl hover:border-primary/50 transition-colors">
+<span class="material-symbols-outlined text-primary mb-3" style="font-variation-settings: 'FILL' 1;">insights</span>
+<h3 class="font-subheading text-subheading text-on-secondary-fixed mb-2">Business-Driven Solutions</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Setiap baris kode yang kami buat didasarkan pada nilai bisnis nyata.</p>
+</div>
+</div>
+</div>
+<div class="relative group">
+<div class="bg-surface-dark rounded-2xl p-8 h-full flex flex-col justify-center text-on-primary">
+<div class="mb-8">
+<h3 class="text-3xl font-bold mb-4">Membangun Masa Depan Digital Indonesia</h3>
+<p class="opacity-80 italic">"Kami percaya bahwa inovasi bukan tentang apa yang kita buat hari ini, tapi bagaimana teknologi tersebut mampu menopang pertumbuhan bisnis untuk dekade yang akan datang."</p>
+</div>
+<div class="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
+<div>
+<div class="text-4xl font-bold text-secondary-fixed mb-1">50+</div>
+<div class="text-sm opacity-60">Projects Delivered</div>
+</div>
+<div>
+<div class="text-4xl font-bold text-secondary-fixed mb-1">20+</div>
+<div class="text-sm opacity-60">Expert Engineers</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission -->
+<section class="py-section-padding bg-surface">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="p-10 bg-primary-container rounded-3xl text-on-primary relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]">visibility</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl">lightbulb</span>
+                        Visi
+                    </h3>
+<p class="font-body-lg text-body-lg leading-relaxed">
+                        Menjadi perusahaan konsultan dan pengembang teknologi informasi terdepan di Asia Tenggara yang memberdayakan bisnis melalui inovasi digital yang strategis dan berkelanjutan.
+                    </p>
+</div>
+<div class="p-10 bg-surface-dark rounded-3xl text-on-primary relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px]">rocket_launch</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl">flag</span>
+                        Misi
+                    </h3>
+<ul class="space-y-4 font-body-md">
+<li class="flex gap-4">
+<span class="text-primary-fixed shrink-0">01.</span>
+                            Memberikan solusi IT yang personal dan berdampak langsung pada efisiensi operasional.
+                        </li>
+<li class="flex gap-4">
+<span class="text-primary-fixed shrink-0">02.</span>
+                            Menjembatani kesenjangan antara kebutuhan bisnis dan kapabilitas teknologi.
+                        </li>
+<li class="flex gap-4">
+<span class="text-primary-fixed shrink-0">03.</span>
+                            Membangun ekosistem teknologi yang aman, skalabel, dan terukur.
+                        </li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-md text-headline-md text-on-secondary-fixed mb-4">Core Values</h2>
+<p class="text-on-surface-variant">Pilar utama yang mendasari setiap interaksi dan solusi yang kami berikan.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Value 1 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">gavel</span>
+</div>
+<h4 class="font-subheading text-subheading mb-3">Integrity &amp; Governance</h4>
+<p class="font-label-sm text-on-surface-variant leading-relaxed">Menjunjung tinggi standar etika dan transparansi dalam setiap proyek.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">precision_manufacturing</span>
+</div>
+<h4 class="font-subheading text-subheading mb-3">Engineering Excellence</h4>
+<p class="font-label-sm text-on-surface-variant leading-relaxed">Presisi teknis dalam setiap baris kode dan arsitektur sistem.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">psychology</span>
+</div>
+<h4 class="font-subheading text-subheading mb-3">Business-Driven Innovation</h4>
+<p class="font-label-sm text-on-surface-variant leading-relaxed">Inovasi yang fokus pada ROI dan pertumbuhan strategis klien.</p>
+</div>
+<!-- Value 4 -->
+<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all group border-b-4 border-transparent hover:border-primary">
+<div class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl">engineering</span>
+</div>
+<h4 class="font-subheading text-subheading mb-3">Operational Ownership</h4>
+<p class="font-label-sm text-on-surface-variant leading-relaxed">Tanggung jawab penuh atas keberlanjutan dan performa sistem.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-section-padding bg-white relative overflow-hidden" id="services">
+<div class="absolute inset-0 grid-pattern pointer-events-none"></div>
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-primary section-accent pl-6 mb-4">Our Pillars of Services</h2>
+<p class="text-on-surface-variant">Solusi komprehensif yang dirancang untuk menjawab tantangan unik bisnis Anda di era industri 4.0.</p>
+</div>
+<a class="inline-flex items-center text-primary font-semibold hover:gap-3 transition-all duration-300" href="#contact">
+                    See All Services <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Service 1 -->
+<div class="group p-8 bg-surface rounded-3xl border border-divider-light hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="absolute -right-8 -top-8 text-[160px] text-primary/5 group-hover:text-white/10 transition-colors pointer-events-none">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">terminal</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 group-hover:text-white transition-colors">Custom Software Development</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-white/80 transition-colors">
+                            Membangun aplikasi mobile dan web yang skalabel dengan arsitektur modern.
+                        </p>
+<ul class="space-y-2 group-hover:text-white/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Mobile App (iOS/Android)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Enterprise Web Platforms</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> SaaS Development</li>
+</ul>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="group p-8 bg-surface rounded-3xl border border-divider-light hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="absolute -right-8 -top-8 text-[160px] text-primary/5 group-hover:text-white/10 transition-colors pointer-events-none">
+<span class="material-symbols-outlined">dataset</span>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">settings_input_component</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 group-hover:text-white transition-colors">Enterprise Integration</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-white/80 transition-colors">
+                            Sinkronisasi data antar sistem untuk menciptakan ekosistem bisnis yang kohesif.
+                        </p>
+<ul class="space-y-2 group-hover:text-white/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> API &amp; Microservices</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> ERP &amp; CRM Integration</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Legacy System Migration</li>
+</ul>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="group p-8 bg-surface rounded-3xl border border-divider-light hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="absolute -right-8 -top-8 text-[160px] text-primary/5 group-hover:text-white/10 transition-colors pointer-events-none">
+<span class="material-symbols-outlined">query_stats</span>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">monitoring</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 group-hover:text-white transition-colors">Data Analytics &amp; AI</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-white/80 transition-colors">
+                            Mengolah data mentah menjadi wawasan berharga untuk pengambilan keputusan.
+                        </p>
+<ul class="space-y-2 group-hover:text-white/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> BI Dashboards</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Machine Learning</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Big Data Processing</li>
+</ul>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="group p-8 bg-surface rounded-3xl border border-divider-light hover:bg-primary transition-all duration-500 overflow-hidden relative">
+<div class="absolute -right-8 -top-8 text-[160px] text-primary/5 group-hover:text-white/10 transition-colors pointer-events-none">
+<span class="material-symbols-outlined">groups</span>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8 group-hover:bg-white/20 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-4xl">assignment</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm mb-4 group-hover:text-white transition-colors">Strategic IT Consulting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 group-hover:text-white/80 transition-colors">
+                            Pendampingan ahli untuk memetakan roadmap teknologi jangka panjang.
+                        </p>
+<ul class="space-y-2 group-hover:text-white/90">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Digital Transformation Strategy</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> IT Governance &amp; Security</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-sm">check_circle</span> Infrastructure Planning</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-section-padding bg-surface-container-low" id="leadership">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-md text-headline-md text-on-secondary-fixed mb-4">Leadership Team</h2>
+<p class="text-on-surface-variant">Digerakkan oleh para visioner dengan pengalaman mendalam di industri teknologi.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- CEO -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md relative">
+<img alt="CEO" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional portrait of a confident male executive in his 40s, wearing a sharp charcoal suit and white shirt, standing in a brightly lit modern office with large glass windows. The lighting is crisp and natural, highlighting a sophisticated and authoritative presence. The overall aesthetic is clean and premium, consistent with a high-end corporate environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrK5tWVzdIieVeZfvMifh68unSSxp4OJ3xlDkPa-7dxf5BGMmNcGpJTMjd9ZS1F_5c7E628Nq1Tj6d-9IzXk9cKWGchXL_VlqJO2-muqD2S7Iuk7ScTkMKW0y6JsJVT4J7NjhzkMeOv12AztwUlgoarRZUyi1l5fGBrt49XNCZ4yqS2XOoMFluSSDzjAVwpJahuAtThePou8Dwbs-lHVwpVgDp6zZVQtM6uyj4_kOXxuxLSvAf1vRm6-6XuHSnYJn5b1ayCbfC5V4l"/>
+</div>
+<h4 class="font-subheading text-subheading text-primary">Syaifani Auliana Havid</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Chief Executive Officer</p>
+<p class="font-body-md text-on-surface italic text-sm">"Inovasi adalah DNA kami dalam mendorong kemajuan klien."</p>
+</div>
+<!-- CTO -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md relative">
+<img alt="CTO" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Portrait of a visionary male technology leader in a minimalist office setting, wearing a navy blue turtleneck. Soft, focused lighting emphasizes intelligence and focus. The background is slightly blurred showing high-tech equipment and minimalist decor, maintaining a professional yet modern technical atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBT8xjXEoOeMBE2TnIGc3d6x7-BfTPbLqfmeGzBbBeXVcIG4zU6uocjWNUbHx1KY3VtKQ51cpJJ1_-emj31ao8-zUZe6vDmq8yO9bOxu4stmdkCPsgqxmSReczlts9KylZaFMr072ND9DpMV3LmdXucGLW4BVFllYb5-e-mh5eM4TN8JulF5mA0baXb8grux9TrWHODSKDEqkOdzxAO2OegM75zl4uxoEAQ9ACDWnTxgAFuyGFv35IqZ8wvkL_VHGj2RdtF-MnFQKMb"/>
+</div>
+<h4 class="font-subheading text-subheading text-primary">Raul Mahya Komaran</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Chief Technology Officer</p>
+<p class="font-body-md text-on-surface italic text-sm">"Teknologi terbaik adalah teknologi yang memberikan nilai nyata."</p>
+</div>
+<!-- COO -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md relative">
+<img alt="COO" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A male executive standing confidently in a modern, glass-walled conference room. He is wearing a tailored grey suit. The lighting is professional, high-key, and bright, creating a clean corporate look. The setting reflects operational excellence and strategic leadership in a modern business context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSCPrGnS03lkZWUSZ7BzBFfHgX2UZ6--V8LWDVfbnI9yYV_3WPqOt9izzYVSH328tNxTAj_NNLmmBGGn75fzbwBTKBhsvvZan-S85LuWy-nIuRo7l_E5nnHhw4n5egLHDrYWsNU7GZLy_l3tTSih23eCM5VxHGMcxMalyCkgK63q6h4Yvx6FfQhLVZaR-QiIlB8oB0lim2desuu0IWnZhYpzvJz35F0BQBcrXGsMIeyuODm94xY5pil-GEbACufd_76Y4-iHjapXbn"/>
+</div>
+<h4 class="font-subheading text-subheading text-primary">Rinaldi Gunawan</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Chief Operating Officer</p>
+<p class="font-body-md text-on-surface italic text-sm">"Operasi yang solid adalah kunci dari kepuasan pelanggan."</p>
+</div>
+<!-- Head of Sales -->
+<div class="group">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mb-6 shadow-md relative">
+<img alt="Head of Sales" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Friendly and professional portrait of a male sales leader, smiling warmly in a contemporary office environment. He is dressed in business casual attire with a blue shirt. The background is bright and airy with subtle greenery, conveying a sense of approachability and relationship-driven business excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0zUWl4Rp_Z0tv4AP-wTGr1GzjyQSY_TxK1APRzZJimMslcV6HP1T3A11-EVNn1lKSWEIFfpLnhnAojRGXT2ubX-Eb2OG0Rw3IrZHCUiAPFg85rXkqMrGka7k5Su275IVvQiAXRSpymM5XClFErFk6iwxSOK7i2A3S3F0yEfjYY6fVtaU5hLs6380IlBE9HFRWqex0rIFkzIaLaEBFra6e4N8Dg6RFJmSyHfz0zeaZhMzUINiZp122a6OHz3vfbJBkG8GGYA4i_og8"/>
+</div>
+<h4 class="font-subheading text-subheading text-primary">Muhammad Giffari Havid</h4>
+<p class="font-label-sm text-on-surface-variant uppercase tracking-wider mb-2">Head of Sales</p>
+<p class="font-body-md text-on-surface italic text-sm">"Kami tidak hanya menjual layanan, kami membangun kemitraan."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Nexora Section -->
+<section class="py-section-padding bg-surface-dark text-on-primary">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-md text-headline-md mb-4">Why Choose Nexora?</h2>
+<p class="opacity-70">Keunggulan kami dalam memberikan jaminan kualitas dan keamanan tingkat enterprise.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6">verified_user</span>
+<h4 class="font-subheading text-subheading mb-3">Enterprise Governance</h4>
+<p class="text-sm opacity-70">Standar operasional yang terukur dan terdokumentasi dengan baik.</p>
+</div>
+<div class="p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6">security</span>
+<h4 class="font-subheading text-subheading mb-3">Military-Grade Security</h4>
+<p class="text-sm opacity-70">Perlindungan data end-to-end dengan standar enkripsi terbaru.</p>
+</div>
+<div class="p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6">support_agent</span>
+<h4 class="font-subheading text-subheading mb-3">24/7 Dedicated Support</h4>
+<p class="text-sm opacity-70">Tim dukungan responsif siap membantu kelancaran bisnis Anda.</p>
+</div>
+<div class="p-8 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-primary-fixed text-4xl mb-6">rocket</span>
+<h4 class="font-subheading text-subheading mb-3">Agile Delivery</h4>
+<p class="text-sm opacity-70">Metodologi pengembangan cepat tanpa mengorbankan kualitas.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-section-padding bg-white" id="portfolio">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary section-accent pl-6 mb-4">Project Portfolio</h2>
+<p class="text-on-surface-variant max-w-xl">Intip beberapa karya terbaik kami yang telah membantu transformasi digital klien.</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 bg-primary text-on-primary rounded-full text-sm font-semibold">All</button>
+<button class="px-4 py-2 bg-surface border border-divider-light text-on-surface-variant rounded-full text-sm hover:bg-primary-fixed transition-colors">Enterprise</button>
+<button class="px-4 py-2 bg-surface border border-divider-light text-on-surface-variant rounded-full text-sm hover:bg-primary-fixed transition-colors">Dashboard</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Portfolio 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface-container rounded-2xl overflow-hidden mb-4 relative">
+<img alt="ERP System" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-fidelity UI design of an enterprise resource planning (ERP) dashboard on a sleek laptop screen. The interface features clean charts, data tables, and a primary blue color scheme. The lighting is soft and professional, highlighting a modern digital workspace. The overall aesthetic is one of precision, data-driven intelligence, and corporate efficiency." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrgZrbOr7xBiIKtbH_CSnscu5uW3e3Od7RWpp3enXYlyJGzUMYTFtTj-0noe_FzLpSR4LOv2OJt9NlWdU_fbVvOQ0ONAkC6b9XgNHCKe7PUgTYCc0uWhS4k59agbVmme-otSlPc35HXGoI2kFDUNltVogxuUCt98FEykKq_WnCX6YIJiuHgPLN7J7GhKw6CYhwsWb33a-Xz1j_PcJ7WoB2EnsaNoG6M4jVkeTmdsGexC3osZhkDx2zsFiW4UjqAUenMdiC8-zgqbGJ"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">add_circle</span>
+</div>
+</div>
+<h4 class="font-subheading text-subheading text-on-secondary-fixed">NexFlow ERP Ecosystem</h4>
+<p class="text-on-surface-variant text-sm">Enterprise System Implementation</p>
+</div>
+<!-- Portfolio 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface-container rounded-2xl overflow-hidden mb-4 relative">
+<img alt="Analytics Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A stunning digital analytics dashboard showing complex data visualizations and 3D maps in a dark mode interface. Vibrant blue and cyan glowing lines represent data flow. The aesthetic is futuristic and high-tech, evoking feelings of strategic intelligence and advanced data processing capabilities." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkEW-XiuYsuSMh2b7ESkRqTHQ4d0SxDds9ZjaKYCDB9FpSKOQZe20GFSRmC786I380SP0TBm-Ctbg9c0Kd59jfcJWgWuUeSoHgtrTXqVi1te5tip7hJJQIhkPDpUV-QwtBm_9Hl9AfECffsXGM1NC_zPylE2ybvaIGQw0YmB5ZZf8p-h6WudK-GnXdexZts7fQM2PXYj--Vg4JbyZE3grleHVufpMmuCjnDczbSgep07yhcUw4M-sRD4dZshsmWWgbW5Wacbd1daXx"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">add_circle</span>
+</div>
+</div>
+<h4 class="font-subheading text-subheading text-on-secondary-fixed">Global Logistics Tracker</h4>
+<p class="text-on-surface-variant text-sm">Real-time Data Analytics</p>
+</div>
+<!-- Portfolio 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface-container rounded-2xl overflow-hidden mb-4 relative">
+<img alt="Fintech App" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern mobile application interface displayed on a premium smartphone. The app shows financial transactions and wallet management with a clean, user-friendly design. Soft shadows and a light-mode aesthetic convey trust and reliability. The overall visual style is corporate yet approachable, focusing on mobile innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB44uQSlCdM4OdszSEPQTi7AvWxTdlIxHrKkI-jb-ywDtJKkmTNq4SaSGNTv56oDP65BcQMj2HN10T6wxbv58MJLGpCRZsFF6sJyB-_9aGtlsIIBVaeqTHzSDhZEgi-UXqqARIMD-L6_iar5OpSl6o2txG5MaJMmDeuTkjQuVrHIhANTST2iSLq6WDT3TWL4HObsfJVZgZeEEeA4ECa22I9c-tofx-fBGNvv7pYH3f7G4OQ9rg6YUcSfxNXkCAN5ed_6PbMnJzYAsi1"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-5xl">add_circle</span>
+</div>
+</div>
+<h4 class="font-subheading text-subheading text-on-secondary-fixed">NexPay Mobile Wallet</h4>
+<p class="text-on-surface-variant text-sm">Custom Fintech Solution</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-section-padding bg-surface" id="contact">
+<div class="w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-white rounded-[40px] shadow-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-5 border border-divider-light">
+<div class="lg:col-span-2 bg-primary p-12 text-on-primary flex flex-col justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md mb-6 leading-tight">Let’s Build the Future Together</h2>
+<p class="opacity-80 mb-12">Siap untuk mentransformasi bisnis Anda? Hubungi tim ahli kami hari ini untuk konsultasi gratis.</p>
+<div class="space-y-8">
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined mt-1">location_on</span>
+<div>
+<h5 class="font-bold mb-1">Kantor Pusat</h5>
+<p class="opacity-70 text-sm">Bandung, Jawa Barat, Indonesia</p>
+</div>
+</div>
+<div class="flex items-start gap-6">
+<span class="material-symbols-outlined mt-1">mail</span>
+<div>
+<h5 class="font-bold mb-1">Email Kemitraan</h5>
+<p class="opacity-70 text-sm">admin@nexora.co.id<br/>sales@nexora.co.id</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex gap-4 mt-12">
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">link</span>
+</a>
+<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-3 p-12">
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-button-label text-sm text-on-surface">Nama Lengkap</label>
+<input class="w-full bg-surface border-divider-light rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-button-label text-sm text-on-surface">Nama Perusahaan</label>
+<input class="w-full bg-surface border-divider-light rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-button-label text-sm text-on-surface">Email Bisnis</label>
+<input class="w-full bg-surface border-divider-light rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-button-label text-sm text-on-surface">Nomor WhatsApp</label>
+<input class="w-full bg-surface border-divider-light rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" type="tel"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="font-button-label text-sm text-on-surface">Pesan / Kebutuhan IT</label>
+<textarea class="w-full bg-surface border-divider-light rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" rows="4"></textarea>
+</div>
+<button class="md:col-span-2 bg-primary text-on-primary py-4 rounded-lg font-button-label hover:shadow-lg transition-all active:scale-[0.98]" type="submit">
+                            Kirim Pesan Sekarang
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-dark dark:bg-surface-dark text-on-primary">
+<div class="w-full py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-white/10">
+<div class="space-y-6">
+<div class="font-headline-sm text-headline-sm font-bold text-on-primary">Nexora Technology</div>
+<p class="text-on-primary/60 text-sm leading-relaxed">Penyedia solusi IT end-to-end yang berfokus pada inovasi dan nilai bisnis nyata untuk industri modern.</p>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-lg">Quick Links</h5>
+<ul class="space-y-2">
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#about">About Us</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#services">Core Services</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#leadership">Leadership Team</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#portfolio">Project Portfolio</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-lg">Services</h5>
+<ul class="space-y-2">
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#">Software Dev</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#">System Integration</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#">Data Analytics</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#">IT Consulting</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h5 class="font-bold text-lg">Legal</h5>
+<ul class="space-y-2">
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-primary/80 hover:text-primary-fixed transition-colors" href="#">Terms of Service</a></li>
+</ul>
+<div class="pt-6">
+<p class="font-label-sm text-label-sm text-on-primary/40">© 2024 PT Nexora Teknologi Nusantara. Empowering Growth Through Technology.</p>
+</div>
+</div>
+</div>
+</footer>
+<!-- Mobile Menu Overlay -->
+<div class="fixed inset-0 bg-surface-dark z-[60] flex flex-col items-center justify-center space-y-8 text-on-primary transition-transform duration-500 translate-x-full" id="mobile-menu">
+<button class="absolute top-8 right-8" id="close-menu">
+<span class="material-symbols-outlined text-4xl">close</span>
+</button>
+<a class="text-2xl font-bold" href="#about">About</a>
+<a class="text-2xl font-bold" href="#services">Services</a>
+<a class="text-2xl font-bold" href="#leadership">Leadership</a>
+<a class="text-2xl font-bold" href="#portfolio">Portfolio</a>
+<a class="text-2xl font-bold" href="#contact">Contact</a>
+<a class="bg-primary px-8 py-3 rounded-lg font-bold" href="#contact">Get Consultation</a>
+</div>
+<script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMenu = document.getElementById('close-menu');
+        const navLinks = mobileMenu.querySelectorAll('a');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        const closeFunc = () => {
+            mobileMenu.classList.add('translate-x-full');
+        };
+
+        closeMenu.addEventListener('click', closeFunc);
+        navLinks.forEach(link => link.addEventListener('click', closeFunc));
+
+        // Sticky Navbar Effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow-md');
+                navbar.classList.remove('py-4');
+            } else {
+                navbar.classList.remove('py-2', 'shadow-md');
+                navbar.classList.add('py-4');
+            }
+        });
+
+        // Simple Intersection Observer for Fade-in effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body></html>
